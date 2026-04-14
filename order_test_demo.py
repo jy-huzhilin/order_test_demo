@@ -37,7 +37,7 @@ class order_test_demo:
             raise RuntimeError("cbond.stock_basic_info 不包含可用的 ths_code")
 
         current_ts = pd.Timestamp(current_time).strftime("%Y-%m-%d %H:%M:%S")
-        target_values = [1000000.0, 2000000.0, 3000000.0]
+        target_values = [0.2, 0.3, 0.5]
         rows = []
         for index, symbol in enumerate(symbols):
             rows.append(

@@ -22,8 +22,7 @@
     {
       "type": "order",
       "name": "demo_stock_target_order",
-      "description": "基于 stock_basic_info 生成的最小股票订单 demo",
-      "asset_type": "stock"
+      "description": "基于 stock_basic_info 生成的最小股票订单 demo"
     }
   ],
   "schedule": [
