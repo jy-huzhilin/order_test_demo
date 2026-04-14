@@ -1,0 +1,38 @@
+{
+  "name": "order_test_demo",
+  "type": "factor",
+  "input": [
+    {
+      "db": "basic_data_db",
+      "group_name": "",
+      "sources": [
+        {
+          "table": "cbond.stock_basic_info",
+          "columns": [
+            "ths_code"
+          ]
+        }
+      ],
+      "drop_duplicate": true,
+      "start_time": "-86400",
+      "end_time": "schedule_now"
+    }
+  ],
+  "output": [
+    {
+      "type": "order",
+      "name": "demo_stock_target_order",
+      "description": "基于 stock_basic_info 生成的最小股票订单 demo",
+      "asset_type": "stock"
+    }
+  ],
+  "schedule": [
+    "****-**-** 15:30:00"
+  ],
+  "computation": {
+    "external_source": "order_test_demo.py",
+    "class_name": "order_test_demo",
+    "single": "compute",
+    "batch": ""
+  }
+}
