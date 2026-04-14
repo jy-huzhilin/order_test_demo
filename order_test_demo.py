@@ -46,10 +46,12 @@ class order_test_demo:
                     "symbol": symbol,
                     "value": target_values[index],
                     "deal_settings": {
-                        "account": "demo_stock_account",
-                        "algo": "limit",
-                        "market": "cn_stock",
-                        "priority": index + 1,
+                        "asset_type": "security",
+                        "price_type": "9003",
+                        "tp_sfmc": "vwap",
+                        "tp_kssj": "09:30",
+                        "tp_jssj": "11:30",
+                        "tp_wtzxje": 2500,
                     },
                 }
             )
